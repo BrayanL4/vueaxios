@@ -1,6 +1,7 @@
 <template>
   <div v-if="result" class="about">
     <h1>This is the weather</h1>
+    
     <img :src="'http://openweathermap.org/img/w/'+result.weather[0].icon+'.png'" alt="icono-clima"/>
     <p>Weather: {{ result.weather[0].description }}</p>
     <p>Location: {{ result.name }}<p>
